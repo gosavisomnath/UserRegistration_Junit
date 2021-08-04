@@ -1,0 +1,2 @@
+org/example/UserRegistrationCase.java
+ org.example.UserRegistrationCase

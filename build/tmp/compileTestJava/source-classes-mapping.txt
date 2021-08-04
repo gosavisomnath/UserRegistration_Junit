@@ -1,0 +1,2 @@
+org/example/UserRegistrationTest.java
+ org.example.UserRegistrationTest
