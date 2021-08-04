@@ -46,4 +46,10 @@ public class UserRegistrationTest
         boolean result = userRegistration.validatePasswordatleastonenumericNumber("A9asfghg");
         Assert.assertEquals(true,result);
     }
+    @Test
+    public void givenPassword3conditionmeetthenTrue(){
+        UserRegistrationCase userRegistration = new UserRegistrationCase();
+        boolean result = userRegistration.validatePasswordatleastonespecialChar("A8@aaaao");
+        Assert.assertEquals(true,result);
+    }
 }

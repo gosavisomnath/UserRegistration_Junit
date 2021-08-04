@@ -33,5 +33,9 @@ public class UserRegistrationCase {
         boolean check = Pattern.matches("^[A-Z]{1}[0-9]{1,}+[A-Za-z0-9]{6,}$",str);
         return check;
     }
+    public boolean validatePasswordatleastonespecialChar(String str){
+        boolean check = Pattern.matches( "^(.*[A-Z]{1,}.*[0-9]{1,}.*[~!@#$%^&*]?[A-Za-z0-9]{5,})$",str);
+        return check;
+    }
 
 }
