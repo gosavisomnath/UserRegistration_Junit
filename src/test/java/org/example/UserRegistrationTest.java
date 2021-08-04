@@ -21,4 +21,11 @@ public class UserRegistrationTest
         boolean result = userRegistration.validateEmailTest("abc.xyz@bl.co.in");
         Assert.assertEquals(true,result);
     }
+    @Test
+    public void givenMobilenoconditionmeetthenTrue(){
+        UserRegistrationCase userRegistration = new UserRegistrationCase();
+        boolean result = userRegistration.validateMobileNumber("91 9421551510");
+        Assert.assertEquals(true, result);
+
+    }
 }

@@ -17,4 +17,8 @@ public class UserRegistrationCase {
         boolean check = Pattern.matches("abc.xyz@bl.co.in", emailTest);
         return check;
     }
+    public boolean validateMobileNumber(String str) {
+        boolean check = Pattern.matches("^([0-9]{2}) ([1-9]{1}[0-9]{9})$" , str);
+        return check;
+    }
 }
