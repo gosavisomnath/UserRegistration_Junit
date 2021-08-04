@@ -31,13 +31,19 @@ public class UserRegistrationTest
     @Test
     public void givenPasswordconditionmeetthenTrue(){
         UserRegistrationCase userRegistration = new UserRegistrationCase();
-        boolean result = userRegistration.validatePassword("Abc45ut3");
+        boolean result = userRegistration.validatePassword("Abcdedfs");
         Assert.assertEquals(true,result);
     }
     @Test
     public void givenPassword1conditionmeetthenTrue(){
         UserRegistrationCase userRegistration = new UserRegistrationCase();
-        boolean result = userRegistration.validatePasswordatleastoneUpperCase("Aber345o");
+        boolean result = userRegistration.validatePasswordatleastoneUpperCase("Aberdsds");
+        Assert.assertEquals(true,result);
+    }
+    @Test
+    public void givenPassword2conditionmeetthenTrue(){
+        UserRegistrationCase userRegistration = new UserRegistrationCase();
+        boolean result = userRegistration.validatePasswordatleastonenumericNumber("A9asfghg");
         Assert.assertEquals(true,result);
     }
 }
