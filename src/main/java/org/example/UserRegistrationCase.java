@@ -13,4 +13,8 @@ public class UserRegistrationCase {
         boolean check = Pattern.matches("^[A-Z]{1}+[a-z]{3,}$", str);
         return check;
     }
+    public boolean validateEmailTest(String emailTest) {
+        boolean check = Pattern.matches("abc.xyz@bl.co.in", emailTest);
+        return check;
+    }
 }

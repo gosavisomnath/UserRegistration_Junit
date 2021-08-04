@@ -15,4 +15,10 @@ public class UserRegistrationTest
         boolean result = userRegistration.validateLastName("Gosavi");
         Assert.assertEquals(true, result);
     }
+    @Test
+    public void validateforemail(){
+        UserRegistrationCase userRegistration = new UserRegistrationCase();
+        boolean result = userRegistration.validateEmailTest("abc.xyz@bl.co.in");
+        Assert.assertEquals(true,result);
+    }
 }
