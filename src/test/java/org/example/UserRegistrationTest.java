@@ -28,4 +28,10 @@ public class UserRegistrationTest
         Assert.assertEquals(true, result);
 
     }
+    @Test
+    public void givenPasswordconditionmeetthenTrue(){
+        UserRegistrationCase userRegistration = new UserRegistrationCase();
+        boolean result = userRegistration.validatePassword("Abc45ut3");
+        Assert.assertEquals(true,result);
+    }
 }

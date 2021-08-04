@@ -21,4 +21,8 @@ public class UserRegistrationCase {
         boolean check = Pattern.matches("^([0-9]{2}) ([1-9]{1}[0-9]{9})$" , str);
         return check;
     }
+    public boolean validatePassword(String str) {
+        boolean check = Pattern.matches("^[a-zA-Z0-9]{8,}$", str);
+        return check;
+    }
 }
