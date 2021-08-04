@@ -9,4 +9,8 @@ public class UserRegistrationCase {
         boolean check = Pattern.matches("^[A-Z]{1}+[a-z]{3,}$", str);
         return check;
     }
+    public boolean validateLastName(String str) {
+        boolean check = Pattern.matches("^[A-Z]{1}+[a-z]{3,}$", str);
+        return check;
+    }
 }

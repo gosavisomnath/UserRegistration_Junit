@@ -9,4 +9,10 @@ public class UserRegistrationTest
         boolean result = userRegistration.validateFirstName("Soma");
         Assert.assertEquals(true,result);
     }
+    @Test
+    public void givenLastnameshouldbeTrue() {
+        UserRegistrationCase userRegistration = new UserRegistrationCase();
+        boolean result = userRegistration.validateLastName("Gosavi");
+        Assert.assertEquals(true, result);
+    }
 }
